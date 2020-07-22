@@ -336,7 +336,7 @@ bmLC:OncologicalSurgery	rdf:type	owl:Class;
 bmLC:HospitalProcess	rdf:type	owl:Class;
 						rdfs:subClassOf bmLC:Concept;
 						rdfs:label	"HospitalProcess";
-						rdfs:comment "Represents hospital process.";
+						rdfs:comment "Represents the reason of the hospoital service that is provided to the patient. It is identified by the ID of the document from where the service reason is extracted.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1230,7 +1230,6 @@ bmLC:familiarAntecedents	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2019-01-30"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
 bmLC:systemicProgression	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"systemicProgression";
 				rdfs:domain	bmLC:LCPatient;
@@ -1255,7 +1254,6 @@ bmLC:brainMetastasis	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2017-10-04"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
 bmLC:survivalMonths	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"survivalMonths";
 				rdfs:domain	bmLC:LCPatient;
@@ -1263,7 +1261,6 @@ bmLC:survivalMonths	rdf:type	owl:DatatypeProperty;
 				rdfs:comment	"Months from diagnosis to death or until the last documented record of the patient.";
 				dcterms:modified "2017-10-04"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 
 bmLC:sampleDate	rdf:type	owl:ObjectProperty;
 					rdfs:label	"sampleDate";
@@ -1559,7 +1556,7 @@ bmLC:hasNonOncologicalDrug	rdf:type        owl:ObjectProperty;
 				        rdfs:label	"hasNonOncologicalDrug";
 						rdfs:domain	bmLC:LCPatient;
 						rdfs:range	bmLC:Drug;
-						rdfs:comment "";
+						rdfs:comment "Relation between the patient and the non-oncological line of treamtment.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1567,7 +1564,7 @@ bmLC:hasOncologicalTreatmentLine	rdf:type        owl:ObjectProperty;
 				        rdfs:label	"hasOncologicalTreatmentLine";
 						rdfs:domain	bmLC:LCPatient;
 						rdfs:range	bmLC:OncologicalTreatmentLine;
-						rdfs:comment "";
+						rdfs:comment "Relation between the patient and the oncological line of treamtment.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1575,7 +1572,7 @@ bmLC:existenceOf_cutaneaToxicity	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"existenceOf_cutaneaToxicity";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "if the patient developed any toxicity of kind ‘cutanea’ during the line. Format: Boolean.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1583,7 +1580,7 @@ bmLC:existenceOf_toxicity	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"existenceOf_toxicity";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "if the patient developed any toxicity. Format: Boolean.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1591,7 +1588,7 @@ bmLC:treatmentLineNumber	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"treatmentLineNumber";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "Line of treatment number.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1599,7 +1596,7 @@ bmLC:treatmentDurationMonths	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"treatmentDurationMonths";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "The duration of the line of treatment in months";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1607,7 +1604,7 @@ bmLC:existenceOf_neurologicalToxicity	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"existenceOf_neurologicalToxicity";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "If Entity has received immunotherapy oncology treatment. Format: Boolean";
+						rdfs:comment "if the patient developed any toxicity of kind ‘neurological’ during the line. Format: Boolean.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1615,7 +1612,7 @@ bmLC:existenceOf_gastrointestinalToxicity	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"existenceOf_gastrointestinalToxicity";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "if the patient developed any toxicity of kind ‘gastrointestinal’ during the line. Format: Boolean.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1623,7 +1620,7 @@ bmLC:existenceOf_generalToxicity	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"existenceOf_generalToxicity";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "if the patient developed any toxicity of kind ‘general’ during the line. Format: Boolean.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1631,7 +1628,7 @@ bmLC:existenceOf_neumologicalToxicity	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"existenceOf_neumologicalToxicity";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "if the patient developed any toxicity of kind ‘neumological’ during the line. Format: Boolean.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1639,7 +1636,7 @@ bmLC:existenceOf_analyticalToxicity	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"existenceOf_gastrointestinalToxicity";
 						rdfs:domain	bmLC:existenceOf_analyticalToxicity;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "if the patient developed any toxicity of kind ‘analytical’ during the line. Format: Boolean.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1647,7 +1644,7 @@ bmLC:existenceOf_otherToxicity	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"existenceOf_otherToxicity";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "if the patient developed any toxicity of kind ‘other’ during the line. Format: Boolean.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1655,55 +1652,55 @@ bmLC:existenceOf_endocrinaToxicity	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"existenceOf_endocrinaToxicity";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
-						dcterms:modified "2020-07-21"^^xsd:date;
+						rdfs:comment "if the patient developed any toxicity of kind ‘endocrina’ during the line. Format: Boolean.";
+						dcterms:modified "2020-07-22"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 bmLC:existenceOf_brainMetastasis	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"existenceOf_brainMetastasis";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
-						dcterms:modified "2020-07-21"^^xsd:date;
+						rdfs:comment "Represents if brain metastasis has been detected in Entity. Format: Boolean.";
+						dcterms:modified "2020-07-22"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 bmLC:treatmentType	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"treatmentType";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
-						dcterms:modified "2020-07-21"^^xsd:date;
+						rdfs:comment "An attribute of oncological treatment line representing the treatment type.";
+						dcterms:modified "2020-07-22"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 bmLC:treatmentFinishDate	rdf:type        owl:ObjectProperty;	
 				        rdfs:label	"treatmentFinishDate";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	bmLC:Date;
-						rdfs:comment "";
-						dcterms:modified "2020-07-21"^^xsd:date;
+						rdfs:comment "Relation between the treatment line and the finishing date of the treatment line.";
+						dcterms:modified "2020-07-22"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 bmLC:treatmentInitDate	rdf:type        owl:ObjectProperty;	
 				        rdfs:label	"treatmentInitDate";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	bmLC:Date;
-						rdfs:comment "";
-						dcterms:modified "2020-07-21"^^xsd:date;
+						rdfs:comment "Relation between the treatment line and the initiation date of the treatment line.";
+						dcterms:modified "2020-07-22"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																							
 
 bmLC:treatment_has_oncologicalDrug	rdf:type        owl:ObjectProperty;	
 				        rdfs:label	"treatment_has_oncologicalDrug";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	bmLC:Drug;
-						rdfs:comment "";
-						dcterms:modified "2020-07-21"^^xsd:date;
+						rdfs:comment "Relation between the treatment line and the oncological drugs.";
+						dcterms:modified "2020-07-22"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
 bmLC:treatment_has_nonOncologicalDrug	rdf:type        owl:ObjectProperty;	
 				        rdfs:label	"treatmentInitDate";
 						rdfs:domain	bmLC:NonOncologicalTreatmentLine;
 						rdfs:range	bmLC:Drug;
-						rdfs:comment "";
+						rdfs:comment "Relation between the treatment line and the non-oncological drugs.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																								
 
@@ -1719,7 +1716,7 @@ bmLC:hasOncologicalSurgery	rdf:type        owl:ObjectProperty;
 				        rdfs:label	"hasOncologicalSurgery";
 						rdfs:domain	bmLC:LCPatient;
 						rdfs:range	bmLC:OncologicalSurgery;
-						rdfs:comment "";
+						rdfs:comment "Relation between the patient and the surgey that has been performed on.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.							
 
@@ -1727,7 +1724,7 @@ bmLC:hasHospitalProcess	rdf:type        owl:ObjectProperty;
 				        rdfs:label	"hasHospitalProcess";
 						rdfs:domain	bmLC:LCPatient;
 						rdfs:range	bmLC:HospitalProcess;
-						rdfs:comment "";
+						rdfs:comment "Relation between the patient to which the hospital process belongs and the hospital process.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																							
 
@@ -1735,7 +1732,7 @@ bmLC:hasDurationInHospital	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"hasDurationInHospital";
 						rdfs:domain	bmLC:HospitalProcess;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "An attribute of the service reason representing the duration of the hospital process in days.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1743,7 +1740,7 @@ bmLC:hasProcessId	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"hasProcessId";
 						rdfs:domain	bmLC:HospitalProcess;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "Relation between the hospital process and the unique identifier of the it.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
@@ -1751,7 +1748,7 @@ bmLC:hasGeneratedDocuments	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"hasGeneratedDocuments";
 						rdfs:domain	bmLC:HospitalProcess;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "An attribute of the service reason representing the number of documents generated during the hospital process of the patient.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1759,7 +1756,8 @@ bmLC:hasProcessCategory	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"hasProcessCategory";
 						rdfs:domain	bmLC:HospitalProcess;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "An attribute of the service reason representing the type of hospital process.";
+						dcterms:description "Values: it can be - cons: consultation process.- hdia-home: process which starts in 'daily hospital attendance' and finish without an ingress.- urg-hos: process which starts in 'emergencies' and finish with an ingress in hospital.- nc: no category- home_hos: process of ingress in hospital when the patient comes from home- urg_home: process of emergencies - hdia-hos: process which starts in 'daily hospital attendance' and finish with an ingress in hospital- hos-death: process that end in death for a patient that was ingressed.- urg_death: process that end in death for a patient that was in emergencies.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1767,7 +1765,7 @@ bmLC:hasIngressDate	rdf:type        owl:ObjectProperty;
 				        rdfs:label	"hasIngressDate";
 						rdfs:domain	bmLC:HospitalProcess;
 						rdfs:range	bmLC:Date;
-						rdfs:comment "";
+						rdfs:comment "An attribute of the service reason representing the date at which the patient was ingressed. The initiation date of the hospital process.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -1775,7 +1773,7 @@ bmLC:hasDischargeDate	rdf:type        owl:ObjectProperty;
 				        rdfs:label	"hasDischargeDate";
 						rdfs:domain	bmLC:HospitalProcess;
 						rdfs:range	bmLC:Date;
-						rdfs:comment "";
+						rdfs:comment "An attribute of the service reason representing the date at which the patient was discharged. The finishing date of the hospital process.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																					
 
@@ -1783,7 +1781,7 @@ bmLC:hasServiceReason	rdf:type        owl:ObjectProperty;
 				        rdfs:label	"hasServiceReason";
 						rdfs:domain	bmLC:LCPatient;
 						rdfs:range	bmLC:ServiceReason;
-						rdfs:comment "";
+						rdfs:comment "Relation between the patient that has been derived to a hospital service and the service reason.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1791,7 +1789,7 @@ bmLC:hasDocumentCategory	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"hasDocumentCategory";
 						rdfs:domain	bmLC:ServiceReason;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "An attribute of the service reason representing the category of the document in which it is specified that the patient has been in that specific service.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.							
 
@@ -1799,7 +1797,7 @@ bmLC:hasHospitalService	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"hasHospitalService";
 						rdfs:domain	bmLC:ServiceReason;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "An attribute of the service reason representing the type of the hospital service at which the patient has been derived.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -1807,7 +1805,7 @@ bmLC:hasVisitReason	rdf:type        owl:DatatypeProperty;
 				        rdfs:label	"hasVisitReason";
 						rdfs:domain	bmLC:ServiceReason;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment "";
+						rdfs:comment "An attribute of the service reason representing the reason of the visit of the patient to that specific service.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -1815,7 +1813,7 @@ bmLC:hasDocumentDate	rdf:type        owl:ObjectProperty;
 				        rdfs:label	"hasDocumentDate";
 						rdfs:domain	bmLC:ServiceReason;
 						rdfs:range	bmLC:Date;
-						rdfs:comment "";
+						rdfs:comment "An attribute of the service reason representing the date of the document in which it is specified that the patient has been in that specific service.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
