@@ -13,26 +13,26 @@ bmLC:Concept 	rdf:type	owl:Class;
 				rdfs:label	"Concept";
 				rdfs:comment "Constituents of thoughts or real world entities.";
 				dcterms:modified "2017-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
 bmLC:Annotation	rdf:type	owl:Class;
 					rdfs:label	"Annotation";
 					rdfs:comment "Explanation of a concept including label, id and source of concept.";
 					dcterms:description "e.g. CUI IDs provided by UMLS.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
 bmLC:Relation	rdf:type	owl:Class;
 					rdfs:label	"Relation";
 					rdfs:comment "Relations between concepts.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
 bmLC:SourceName	rdf:type	owl:Class;
 					rdfs:label	"SourceName";
 					rdfs:comment "Source name.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:Image rdf:type owl:Class;
 			rdfs:label	"MedicalImage";
@@ -40,7 +40,7 @@ bmLC:Image rdf:type owl:Class;
 			bmLC:partOf bmLC:ClinicalRecord;
 			rdfs:comment "Patient's medical images.";
 			dcterms:modified "2017-10-23"^^xsd:date;
-			dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>.
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
 bmLC:Test 	rdf:type owl:Class;
 			rdfs:label	"MedicalTest";
@@ -48,7 +48,14 @@ bmLC:Test 	rdf:type owl:Class;
 			bmLC:partOf bmLC:ClinicalRecord;
 			rdfs:comment "Medical procedure performed to detect, diagnose, or monitor diseases, disease processes, susceptibility, and determine a course of treatment.";
 			dcterms:modified "2017-10-23"^^xsd:date;
-			dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>.
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
+
+iasis:Interaction	rdf:type owl:Class;
+			rdfs:label	"Interaction";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Interaction between drugs and disorder, enzyme, target.";
+			dcterms:modified "2020-07-24"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.			
 
 
 #### WP4 requirements: 
@@ -58,7 +65,7 @@ bmLC:Publication	rdf:type	owl:Class;
 					rdfs:subClassOf	bmLC:Concept;
 					rdfs:comment "Scientific publications.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
 bmLC:Author	rdf:type	owl:Class;
 					rdfs:label	"Author";
@@ -72,7 +79,7 @@ bmLC:MENTIONED_IN	rdf:type owl:Class;
 					rdfs:subClassOf bmLC:Relation;
 					rdfs:comment	"A relation that shows in which publication each specific CUI term has been appeared.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
 bmLC:HAS_TOPIC	rdf:type owl:Class;
 				rdfs:label	"HasTopic";
@@ -86,42 +93,42 @@ bmLC:ASSOCIATED_WITH	rdf:type owl:Class;
 						rdfs:subClassOf bmLC:Relation;
 						rdfs:comment	"UMLS Annotation.";
 						dcterms:modified "2017-10-23"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
 bmLC:CAUSES	rdf:type owl:Class;
 				rdfs:label	"Causes";
 				rdfs:subClassOf bmLC:Relation;
 				rdfs:comment	"UMLS Annotation.";
 				dcterms:modified "2017-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:INHIBITS	rdf:type owl:Class;
 				rdfs:label	"Inhibits";
 				rdfs:subClassOf bmLC:Relation;
 				rdfs:comment	"UMLS Annotation.";
 				dcterms:modified "2017-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:INTERACTS_WITH rdf:type owl:Class;
 					rdfs:label	"InteractsWith";
 					rdfs:subClassOf bmLC:Relation;
 					rdfs:comment	"UMLS Annotation.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:PREDISPOSES 	rdf:type owl:Class;
 					rdfs:label	"Predisposes";
 					rdfs:subClassOf bmLC:Relation;
 					rdfs:comment	"UMLS Annotation.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:STIMULATES 	rdf:type owl:Class;
 					rdfs:label	"Stimulates";
 					rdfs:subClassOf bmLC:Relation;
 					rdfs:comment	"UMLS Annotation.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 #### Drug requirements:
@@ -136,11 +143,16 @@ bmLC:Drug	rdf:type owl:Class;
 bmLC:LungCancerDrug	rdf:type owl:Class;
 			rdfs:label	"LungCancerDrug";
 			rdfs:subClassOf	bmLC:Drug;
-			rdfs:comment ".";
-			dcterms:modified "2019-05-23"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+			rdfs:comment "Drugs that are prescibied for lung cancer.";
+			dcterms:modified "2020-07-24"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
+bmLC:AlzheimerDrug	rdf:type owl:Class;
+			rdfs:label	"AlzheimerDrug";
+			rdfs:subClassOf	bmLC:Drug;
+			rdfs:comment "Drugs that are prescribed for Alzheimer Disease.";
+			dcterms:modified "2020-07-24"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:Phenotype rdf:type	owl:Class;
 					rdfs:label	"Phenotype";
@@ -199,12 +211,68 @@ bmLC:Target	rdf:type owl:Class;
 				dcterms:modified "2018-10-30"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+bmLC:Protein	rdf:type owl:Class;
+				rdfs:label	"Protein";
+				rdfs:subClassOf	bmLC:Concept;
+				rdfs:comment "Represents large biomolecules, or macromolecules, consisting of one or more long chains of amino acid residues.";
+				dcterms:modified "2020-07-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
 bmLC:PredictedDrugSideEffect	rdf:type owl:Class;
 						rdfs:label	"PredictedDrugSideEffect";
 						rdfs:subClassOf	bmLC:Relation;
 						rdfs:comment "The predicted Drug SideEffect relation.";
 						dcterms:modified "2019-01-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.				
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+bmLC:DrugDisorderInteraction	rdf:type owl:Class;
+						rdfs:label	"DrugDisorderInteraction";
+						rdfs:subClassOf	bmLC:Interaction;
+						rdfs:comment "Represents the relation between drugs and disorders.";
+						dcterms:modified "2020-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+
+bmLC:DrugSideEffectInteraction	rdf:type owl:Class;
+						rdfs:label	"DrugSideEffectInteraction";
+						rdfs:subClassOf	bmLC:Interaction;
+						rdfs:comment "Represents side effects of drugs.";
+						dcterms:modified "2020-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+
+bmLC:DrugTargetInteraction	rdf:type owl:Class;
+						rdfs:label	"DrugTargetInteraction";
+						rdfs:subClassOf	bmLC:Interaction;
+						rdfs:comment "Represents the relation between drugs and targets.";
+						dcterms:modified "2020-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+
+bmLC:DrugEnzymeInteraction	rdf:type owl:Class;
+						rdfs:label	"DrugEnzymeInteraction";
+						rdfs:subClassOf	bmLC:Interaction;
+						rdfs:comment "Represents the relation between drugs and enzymes.";
+						dcterms:modified "2020-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+
+bmLC:DrugDrugInteraction	rdf:type owl:Class;
+						rdfs:label	"DrugDrugInteraction";
+						rdfs:subClassOf	bmLC:Interaction;
+						rdfs:comment "Represents the relation between drugs.";
+						dcterms:modified "2020-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+
+bmLC:SymmetricDrugDrugInteraction	rdf:type owl:Class;
+						rdfs:label	"SymmetricDrugDrugInteraction";
+						rdfs:subClassOf	bmLC:Interaction;
+						rdfs:comment "Represents the symmetric relation between drugs.";
+						dcterms:modified "2020-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+bmLC:AdverseEvent	rdf:type owl:Class;
+						rdfs:label	"AdverseEvent";
+						rdfs:subClassOf	bmLC:Concept;
+						rdfs:comment "Represents the consequence of the interaction between two drugs.";
+						dcterms:modified "2020-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																					
 
 
 #### WP2 requirements:
@@ -875,6 +943,22 @@ bmLC:targetLabel	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-10-30"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+bmLC:proteinID	rdf:type owl:DatatypeProperty;
+					rdfs:label "proteinID";
+					rdfs:domain bmLC:Protein;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Protein ID.";
+					dcterms:modified "2020-07-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:proteinLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "proteinName";
+					rdfs:domain bmLC:Protein;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Protein Label.";
+					dcterms:modified "2020-07-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
 bmLC:target_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
 									rdfs:label	"target_isRelatedTo_gene";
 									rdfs:domain	bmLC:Target;
@@ -990,7 +1074,46 @@ bmLC:sideEffect_isRelatedTo_pdse	rdf:type	owl:ObjectProperty;
 							rdfs:comment	"Connection between phenotype and predicted-drug-sideEffect relation.";
 							dcterms:modified "2019-01-30"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-																				
+
+bmLC:object_drug	rdf:type	owl:ObjectProperty;
+							rdfs:label	"object_drug";
+							rdfs:domain	bmLC:DrugDrugInteraction;
+							rdfs:range	bmLC:Drug;
+							rdfs:comment	"Relation which connects the drug drug interacion to the object drug.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+bmLC:precipitant_drug	rdf:type	owl:ObjectProperty;
+							rdfs:label	"precipitant_drug";
+							rdfs:domain	bmLC:DrugDrugInteraction;
+							rdfs:range	bmLC:Drug;
+							rdfs:comment	"Relation which connects the drug drug interacion to the precipitant drug.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.										
+
+bmLC:toxicityType	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"toxicityType";
+							rdfs:domain	bmLC:Phenotype;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment	"An attribute of phenotype represetning the type of the toxicity.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+bmLC:interactor1	rdf:type	owl:ObjectProperty;
+							rdfs:label	"interactor1";
+							rdfs:domain	bmLC:Interaction;
+							rdfs:range	bmLC:Drug;
+							rdfs:comment	"Relation which connects an interaction to the involved drug.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:interactor1	rdf:type	owl:ObjectProperty;
+							rdfs:label	"interactor1";
+							rdfs:domain	bmLC:Interaction;
+							rdfs:range	bmLC:Concept;
+							rdfs:comment	"Relation which connects an interacion to the second involved concept (e.g. disorder, enzyme,...).";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.							
 
 #### WP2 requirements:
 ##### lc_notes:
