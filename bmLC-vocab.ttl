@@ -176,20 +176,6 @@ bmLC:Enzyme	rdf:type owl:Class;
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:Effect	rdf:type owl:Class;
-				rdfs:label	"Effect";
-				rdfs:subClassOf	bmLC:Concept;
-				rdfs:comment "The effectiveness of a drug according to its interaction with another drug.";
-				dcterms:modified "2018-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-bmLC:Impact	rdf:type owl:Class;
-				rdfs:label	"Impact";
-				rdfs:subClassOf	bmLC:Concept;
-				rdfs:comment "The impact that interaction between two drugs has on the performance of the drug.";
-				dcterms:modified "2018-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 bmLC:EffectInteraction	rdf:type owl:Class;
 				rdfs:label	"EffectInteraction";
 				rdfs:subClassOf	bmLC:Relation;
@@ -870,23 +856,6 @@ bmLC:drugDrugInteraction_sameCYP	rdf:type	owl:ObjectProperty;
 								dcterms:modified "2018-10-23"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
-bmLC:effectLabel	rdf:type	owl:DatatypeProperty;
-								rdfs:label	"effectLabel";
-								rdfs:domain	bmLC:Effect;
-								rdfs:range	rdfs:Literal;
-								rdfs:comment	"Effect Label";
-								dcterms:modified "2019-01-29"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-bmLC:impactLabel	rdf:type	owl:DatatypeProperty;
-								rdfs:label	"impactLabel";
-								rdfs:domain	bmLC:Drug;
-								rdfs:range	rdfs:Literal;
-								rdfs:comment	"Impact Label.";
-								dcterms:modified "2018-11-27"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 bmLC:affects	rdf:type	owl:ObjectProperty;
 								rdfs:label	"affects";
 								rdfs:domain	bmLC:EffectInteraction;
@@ -908,14 +877,6 @@ bmLC:hasEffect	rdf:type	owl:ObjectProperty;
 								rdfs:domain	bmLC:EffectInteraction;
 								rdfs:range	bmLC:Effect;
 								rdfs:comment	"The conncetion between the effect of drugs interaction and the interaction node.";
-								dcterms:modified "2018-11-27"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-bmLC:hasImpact	rdf:type	owl:ObjectProperty;
-								rdfs:label	"hasImpact";
-								rdfs:domain	bmLC:EffectInteraction;
-								rdfs:range	bmLC:Impact;
-								rdfs:comment	"The conncetion between the impact of drugs interaction and the interaction node.";
 								dcterms:modified "2018-11-27"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -1050,6 +1011,13 @@ bmLC:drug_isPredictedToInteractsWith_target	rdf:type	owl:ObjectProperty;
 											dcterms:modified "2018-11-22"^^xsd:date;
 											dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
+bmLC:impact	rdf:type	owl:DatatypeProperty;
+						rdfs:lasbel	"impact";
+						rdfs:domain	bmLC:AdverseEvent;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment	"Represents the type impact of the adverse event i.e. increase/decrease";
+						dcterms:modified "2020-09-14"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:sideEffectLabel	rdf:type	owl:DatatypeProperty;
 									rdfs:label	"sideEffectLabel";
@@ -1082,6 +1050,14 @@ bmLC:object_drug	rdf:type	owl:ObjectProperty;
 							rdfs:comment	"Relation which connects the drug drug interacion to the object drug.";
 							dcterms:modified "2020-07-24"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+bmLC:effect	rdf:type	owl:ObjectProperty;
+							rdfs:label	"effect";
+							rdfs:domain	bmLC:DrugDrugInteraction;
+							rdfs:range	bmLC:AdverseEvent;
+							rdfs:comment	"The relationship between the drug drug interaction and corresponding adverse event.";
+							dcterms:modified "2020-09-14"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.								
 
 bmLC:precipitant_drug	rdf:type	owl:ObjectProperty;
 							rdfs:label	"precipitant_drug";
