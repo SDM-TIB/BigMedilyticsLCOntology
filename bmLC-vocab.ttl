@@ -50,9 +50,9 @@ bmLC:Test 	rdf:type owl:Class;
 			dcterms:modified "2017-10-23"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
-iasis:Interaction	rdf:type owl:Class;
+bmLC:Interaction	rdf:type owl:Class;
 			rdfs:label	"Interaction";
-			rdfs:subClassOf	iasis:Concept;
+			rdfs:subClassOf	bmLC:Concept;
 			rdfs:comment "Interaction between drugs and disorder, enzyme, target.";
 			dcterms:modified "2020-07-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.			
