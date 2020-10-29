@@ -260,6 +260,40 @@ bmLC:AdverseEvent	rdf:type owl:Class;
 						dcterms:modified "2020-07-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																					
 
+bmLC:DrugDrugPrediction	rdf:type owl:Class;
+						rdfs:label	"DrugDrugPrediction";
+						rdfs:subClassOf	bmLC:Interaction;
+						rdfs:comment "Represents the predicted relation between drugs.";
+						dcterms:modified "2020-10-29"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:DrugEnzymePrediction	rdf:type owl:Class;
+							rdfs:label	"DrugEnzymePrediction";
+							rdfs:subClassOf	bmLC:Interaction;
+							rdfs:comment "Represents the predicted relation between drug and enzyme.";
+							dcterms:modified "2020-10-29"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:DrugSideEffectPrediction	rdf:type owl:Class;
+								rdfs:label	"DrugSideEffectPrediction";
+								rdfs:subClassOf	bmLC:Interaction;
+								rdfs:comment "Represents the predicted relation between drug and side effects.";
+								dcterms:modified "2020-10-29"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:DrugTargetPrediction	rdf:type owl:Class;
+							rdfs:label	"DrugTargetPrediction";
+							rdfs:subClassOf	bmLC:Interaction;
+							rdfs:comment "Represents the predicted relation between drug and target.";
+							dcterms:modified "2020-10-29"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:PublicationType	rdf:type owl:Class;
+						rdfs:label	"PublicationType";
+						rdfs:subClassOf	bmLC:Concept;
+						rdfs:comment "Represents the predicted relation between drug and target.";
+						dcterms:modified "2020-10-29"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 #### WP2 requirements:
 #### clinical notes:
@@ -645,7 +679,7 @@ bmLC:publication_isRelatedTo_Disease	rdf:type	owl:ObjectProperty;
 							rdfs:range	bmLC:Disorder;
 							rdfs:comment	"";
 							dcterms:modified "2019-05-24"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-mcastellanosd87/>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:confidence     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"confidence";
@@ -688,7 +722,77 @@ bmLC:title     rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
+bmLC:annotation_isRelatedTo_Disease	rdf:type        owl:ObjectProperty;	
+					                rdfs:label	"annotation_isRelatedTo_Disease";
+									rdfs:domain	bmLC:Annotation;
+									rdfs:range	bmLC:Disorder;
+									rdfs:comment ".";
+									dcterms:modified "2020-10-29"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+bmLC:relation_isRelatedTo_Disease	rdf:type owl:ObjectProperty;	
+					                rdfs:label	"relation_isRelatedTo_Disease";
+									rdfs:domain	bmLC:Relation;
+									rdfs:range	bmLC:Disorder;
+									rdfs:comment ".";
+									dcterms:modified "2020-10-29"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasTopicRelation_isRelatedTo_Disease	rdf:type owl:ObjectProperty;	
+							                rdfs:label	"hasTopicRelation_isRelatedTo_Disease";
+											rdfs:domain	bmLC:HAS_TOPIC;
+											rdfs:range	bmLC:Disorder;
+											rdfs:comment ".";
+											dcterms:modified "2020-10-29"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.									
+
+bmLC:mentionedInRelation_isRelatedTo_Disease	rdf:type owl:ObjectProperty;	
+								                rdfs:label	"mentionedInRelation_isRelatedTo_Disease";
+												rdfs:domain	bmLC:MENTIONED_IN;
+												rdfs:range	bmLC:Disorder;
+												rdfs:comment ".";
+												dcterms:modified "2020-10-29"^^xsd:date;
+												dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:publicationTypeName	rdf:type owl:DatatypeProperty;	
+			                rdfs:label	"publicationTypeName";
+							rdfs:domain	bmLC:PublicationType;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2020-10-29"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasAuthor	rdf:type owl:ObjectProperty;	
+                rdfs:label	"hasAuthor";
+				rdfs:domain	bmLC:Publication;
+				rdfs:range	bmLC:Author;
+				rdfs:comment ".";
+				dcterms:modified "2020-10-29"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasPublicationType	rdf:type owl:ObjectProperty;	
+		                rdfs:label	"hasPublicationType";
+						rdfs:domain	bmLC:Publication;
+						rdfs:range	bmLC:PublicationType;
+						rdfs:comment ".";
+						dcterms:modified "2020-10-29"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:citedBy	rdf:type owl:DatatypeProperty;	
+                rdfs:label	"citedBy";
+				rdfs:domain	bmLC:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment ".";
+				dcterms:modified "2020-10-29"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:citedByLink	rdf:type owl:DatatypeProperty;	
+	                rdfs:label	"citedByLink";
+					rdfs:domain	bmLC:Publication;
+					rdfs:range	rdfs:Literal;
+					rdfs:comment ".";
+					dcterms:modified "2020-10-29"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 #### Drug requirements:
 
@@ -1107,13 +1211,37 @@ bmLC:interactor1	rdf:type	owl:ObjectProperty;
 							dcterms:modified "2020-07-24"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:interactor1	rdf:type	owl:ObjectProperty;
-							rdfs:label	"interactor1";
+bmLC:interactor2	rdf:type	owl:ObjectProperty;
+							rdfs:label	"interactor2";
 							rdfs:domain	bmLC:Interaction;
 							rdfs:range	bmLC:Concept;
 							rdfs:comment	"Relation which connects an interacion to the second involved concept (e.g. disorder, enzyme,...).";
 							dcterms:modified "2020-07-24"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.							
+
+bmLC:predictionMethod	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"predictionMethod";
+							rdfs:domain	bmLC:Interaction;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "Represents the prediction method that is used in order to extract DDI predictions from literature or databases.";
+							dcterms:modified "2020-10-29"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+bmLC:methodAbbreviation	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"methodAbbreviation";
+							rdfs:domain	bmLC:Interaction;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "Represents the abbreviation of the prediction method that is used.";
+							dcterms:modified "2020-10-29"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+bmLC:interaction_isRelatedTo_Disease	rdf:type	owl:ObjectProperty;
+										rdfs:label	"interaction_isRelatedTo_Disease";
+										rdfs:domain	bmLC:Interaction;
+										rdfs:range	bmLC:Disorder;
+										rdfs:comment	"Connection between the interaction and disease.";
+										dcterms:modified "2020-10-29"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 #### WP2 requirements:
 ##### lc_notes:
@@ -1940,6 +2068,21 @@ bmLC:hasDocumentDate	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+bmLC:hasDocumentDate	rdf:type owl:ObjectProperty;	
+				        rdfs:label	"hasDocumentDate";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:ServiceReason;
+						rdfs:comment "";
+						dcterms:modified "2020-10-29"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:radonRiskLevel	rdf:type owl:DatatypeProperty;	
+			        rdfs:label	"radonRiskLevel";
+					rdfs:domain	bmLC:LCPatient;
+					rdfs:range	rdfs:Literal;
+					rdfs:comment "";
+					dcterms:modified "2020-10-29"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 ##### lc_images:
 
