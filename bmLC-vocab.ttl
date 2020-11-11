@@ -72,7 +72,7 @@ bmLC:Author	rdf:type	owl:Class;
 					rdfs:subClassOf	bmLC:Concept;
 					rdfs:comment "Author of Scientific publications.";
 					dcterms:modified "2019-05-24"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:MENTIONED_IN	rdf:type owl:Class;
 					rdfs:label	"MentionedIn";
@@ -377,28 +377,28 @@ bmLC:Biomarker	 rdf:type	owl:Class;
 					rdfs:subClassOf	bmLC:Concept;
 					rdfs:comment "A biomarker, or biological marker is a measurable indicator of some biological state or condition.";
 					dcterms:modified "2018-11-22"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:PerformanceObservation   rdf:type      owl:Class;
 					rdfs:label	"bmLC:PerformanceObservation";
 					rdfs:subClassOf	bmLC:Observation;
 					rdfs:comment "";
 					dcterms:modified "2018-11-27"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:TumorObservation    rdf:type        owl:Class;
 					rdfs:label	"bmLC:TumorObservation";
 					rdfs:subClassOf	 bmLC:Observation;
 					rdfs:comment "";
 					dcterms:modified "2018-11-27"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:ToxicityObservation    rdf:type        owl:Class;
 					rdfs:label	"bmLC:ToxicityObservation";
 					rdfs:subClassOf	 bmLC:Observation;
 					rdfs:comment "";
 					dcterms:modified "2019-05-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:OncologicalTreatmentLine	rdf:type	owl:Class;
 						rdfs:subClassOf bmLC:Concept;
@@ -442,49 +442,49 @@ bmLC:Diagnosis  	rdf:type owl:Class;
 					rdfs:subClassOf	bmLC:Concept;
 					rdfs:comment "The identification of the nature of an illness or other problem by examination of the symptoms.";
 					dcterms:modified "2018-11-26"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.  
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>. 
 
 bmLC:LCImage   	rdf:type owl:Class;
 					rdfs:label	"LCImage";
 					rdfs:subClassOf	bmLC:Concept;
 					rdfs:comment "Image of patient with Lung Cancer";
 					dcterms:modified "2018-11-25"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.  
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.  
 
 bmLC:LungLaterality   	rdf:type owl:Class;
 						rdfs:label	"LungLaterality";
 						rdfs:subClassOf	bmLC:Concept;
 						rdfs:comment "The laterality of lung to which the image refers.";
 						dcterms:modified "2018-11-26"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.  
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:Modality   	rdf:type owl:Class;
 					rdfs:label	"Modality";
 					rdfs:subClassOf	bmLC:Concept;
 					rdfs:comment "Modality of image";
 					dcterms:modified "2018-11-26"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>. 
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:Organ     	rdf:type owl:Class;
 					rdfs:label	"Organ";
 					rdfs:subClassOf	bmLC:Concept;
 					rdfs:comment "The organ which the image belong to.";
 					dcterms:modified "2018-11-26"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:PatientPosition   rdf:type owl:Class;
 						rdfs:label	"PatientPosition";
 						rdfs:subClassOf	bmLC:Concept;
 						rdfs:comment "Patient position";
 						dcterms:modified "2018-11-26"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:BodyPartExamined rdf:type         owl:Class;
 					rdfs:label	"BodyPartExamined";
 					rdfs:subClassOf	bmLC:Concept;
 					rdfs:comment "";
 					dcterms:modified "2018-11-25"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 ####### lc_similarity:
 
@@ -493,7 +493,7 @@ bmLC:PatientSimilarity   rdf:type owl:Class;
 			rdfs:subClassOf	bmLC:Concept;
 			rdfs:comment "";
 			dcterms:modified "2018-11-27"^^xsd:date;
-			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 ##################################################################################################
 ################################### Properties ###################################################
@@ -621,7 +621,7 @@ bmLC:authorName	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"Name of Author";
 				dcterms:modified "2019-05-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:journal	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"journal";
@@ -637,7 +637,7 @@ bmLC:rankingScore_SJR	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"ranking Score_SJR Journal of publication";
 				dcterms:modified "2019-05-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>. 
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:rankingScore_hIndex	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"rankingScore_hIndex";
@@ -645,7 +645,7 @@ bmLC:rankingScore_hIndex	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"ranking Score_hIndex of Journal of publication";
 				dcterms:modified "2019-05-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>. 
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:publicationType	rdf:type	owl:DatatypeProperty;
@@ -654,7 +654,7 @@ bmLC:publicationType	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"Type of Publication";
 				dcterms:modified "2019-05-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>. 
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:authorAffiliation	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"authorAffiliation";
@@ -662,7 +662,7 @@ bmLC:authorAffiliation	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"Affiliation of Author";
 				dcterms:modified "2019-05-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:annotates	rdf:type	owl:ObjectProperty;
@@ -687,7 +687,7 @@ bmLC:confidence     rdf:type     owl:DatatypeProperty;
                                                       	rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:negation     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"negation";
@@ -695,7 +695,7 @@ bmLC:negation     rdf:type     owl:DatatypeProperty;
                                                       	rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2019-05-24"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:relation_isRelatedTo_annotation	rdf:type        owl:ObjectProperty;	
 				                rdfs:label	"relation_isRelatedTo_annotation";
@@ -703,7 +703,7 @@ bmLC:relation_isRelatedTo_annotation	rdf:type        owl:ObjectProperty;
 						rdfs:range	bmLC:Annotation;
 						rdfs:comment	".";
 						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:relation_isRelatedTo_publication	rdf:type        owl:ObjectProperty;	
@@ -712,7 +712,7 @@ bmLC:relation_isRelatedTo_publication	rdf:type        owl:ObjectProperty;
 						rdfs:range	bmLC:Publication;
 						rdfs:comment	".";
 						dcterms:modified "2019-05-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:title     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"title";
@@ -720,7 +720,7 @@ bmLC:title     rdf:type     owl:DatatypeProperty;
                                                       	rdfs:range	rdfs:Literal;
 							rdfs:comment "Title of Publication.";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:annotation_isRelatedTo_Disease	rdf:type        owl:ObjectProperty;	
 					                rdfs:label	"annotation_isRelatedTo_Disease";
@@ -819,7 +819,7 @@ bmLC:disorderLabel_ENG	rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "Disorder label.";
 					dcterms:modified "2019-05-24"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.	
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:isPrescribedFor	rdf:type owl:ObjectProperty;
 					rdfs:label "isPrescribedFor";
@@ -827,7 +827,7 @@ bmLC:isPrescribedFor	rdf:type owl:ObjectProperty;
 				  	rdfs:range bmLC:Disorder;
                   			rdfs:comment "Drug is prescribed for a Disorder.";
 					dcterms:modified "2019-05-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:drugDrugInteraction_drugBank	rdf:type owl:ObjectProperty;
 					rdfs:label "drugDrugInteraction_drugBank";
@@ -835,7 +835,7 @@ bmLC:drugDrugInteraction_drugBank	rdf:type owl:ObjectProperty;
 				  	rdfs:range bmLC:Drug;
                   			rdfs:comment ".";
 					dcterms:modified "2019-05-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:drugDrugInteraction_pubMed	rdf:type owl:ObjectProperty;
 					rdfs:label "drugDrugInteraction_pubMed";
@@ -843,7 +843,7 @@ bmLC:drugDrugInteraction_pubMed	rdf:type owl:ObjectProperty;
 				  	rdfs:range bmLC:Drug;
                   			rdfs:comment ".";
 					dcterms:modified "2019-05-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:phenotypeLabel	rdf:type owl:DatatypeProperty;
 					rdfs:label "PhenotypeLabel";
@@ -1078,7 +1078,7 @@ bmLC:disorderLabel_SPA 	rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "Disorder Label_SPA.";
 					dcterms:modified "2018-11-25"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:disorderID 	rdf:type owl:DatatypeProperty;
 					rdfs:label "disorderID";
@@ -1086,7 +1086,7 @@ bmLC:disorderID 	rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "Disorder ID.";
 					dcterms:modified "2018-11-25"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:disorder_has_indication	rdf:type	owl:ObjectProperty;
@@ -1137,7 +1137,7 @@ bmLC:drug_isPredictedToInteractsWith_target	rdf:type	owl:ObjectProperty;
 											rdfs:range	bmLC:Target;
 											rdfs:comment	"Predicts drug-target interactions ...";
 											dcterms:modified "2018-11-22"^^xsd:date;
-											dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:impact	rdf:type	owl:DatatypeProperty;
 						rdfs:lasbel	"impact";
@@ -1153,7 +1153,7 @@ bmLC:sideEffectLabel	rdf:type	owl:DatatypeProperty;
 									rdfs:range	rdfs:Literal;
 									rdfs:comment	".";
 									dcterms:modified "2018-11-27"^^xsd:date;
-									dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:drug_isRelatedTo_pdse	rdf:type	owl:ObjectProperty;
 							rdfs:label	"drug_isRelatedTo_pdse";
@@ -1292,7 +1292,7 @@ bmLC:familiarAntecedentLabel_ENG	rdf:type        owl:DatatypeProperty;
 						rdfs:range	rdfs:Literal;
 						rdfs:comment	"The title of familiar antecedent.";
 						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasDrug	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasDrug";
@@ -1389,7 +1389,7 @@ bmLC:biomarkerLabel	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"The name of biomarker.";
 				dcterms:modified "2018-11-22"^^xsd:date;
-				dcterms:creator   <https://www.l3s.de/de/user/mcastellanosd87>.
+				dcterms:creator   <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:biomarkers	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"biomarkers";
@@ -1559,7 +1559,7 @@ bmLC:tumorTypeLabel_ENG	rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "English tumor Type Label.";
 					dcterms:modified "2018-11-27"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:secondTumorTypeLabel	rdf:type owl:DatatypeProperty;
 					rdfs:label "secondTumorTypeLabel";
@@ -1567,7 +1567,7 @@ bmLC:secondTumorTypeLabel	rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "second tumor Type Label.";
 					dcterms:modified "2019-05-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:drugLabel_SPA	 rdf:type  owl:DatatypeProperty;
@@ -1576,7 +1576,7 @@ bmLC:drugLabel_SPA	 rdf:type  owl:DatatypeProperty;
                			        rdfs:range rdfs:Literal;
 					rdfs:comment	"";
 					dcterms:modified "2018-11-26"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:drugBankID rdf:type owl:DatatypeProperty;
 					rdfs:label "DrugBankID";
@@ -1584,7 +1584,7 @@ bmLC:drugBankID rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "Drug Bank ID.";
 					dcterms:modified "2018-11-22"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:drugGroupLabel  rdf:type owl:DatatypeProperty;
 					rdfs:label "drugGroupLabel";
@@ -1592,7 +1592,7 @@ bmLC:drugGroupLabel  rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "Drug Group Label.";
 					dcterms:modified "2018-11-26"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:drugGroupLabel_SPA  rdf:type owl:DatatypeProperty;
 					rdfs:label "drugGroupLabel_SPA";
@@ -1600,7 +1600,7 @@ bmLC:drugGroupLabel_SPA  rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "Drug Group Label_SPA.";
 					dcterms:modified "2018-11-26"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasTumorStage	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasTumorStage";
@@ -1608,7 +1608,7 @@ bmLC:hasTumorStage	rdf:type        owl:ObjectProperty;
 						rdfs:range	bmLC:TumorStage;
 						rdfs:comment	".";
 						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasTumorObservation	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasTumorObservation";
@@ -1625,7 +1625,7 @@ bmLC:tumorStageLabel      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasToxicityObservation	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasToxicityObservation";
@@ -1633,7 +1633,7 @@ bmLC:hasToxicityObservation	rdf:type        owl:ObjectProperty;
 						rdfs:range	bmLC:ToxicityObservation;
 						rdfs:comment ".";
 						dcterms:modified "2019-05-24"^^xsd:date;
-						dcterms:creator  <https://www.l3s.de/de/user/mcastellanosd87>.
+						dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasToxicity	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasToxicity";
@@ -1641,7 +1641,7 @@ bmLC:hasToxicity	rdf:type        owl:ObjectProperty;
 						rdfs:range	bmLC:Phenotype;
 						rdfs:comment	".";
 						dcterms:modified "2019-05-24"^^xsd:date;
-						dcterms:creator  <https://www.l3s.de/de/user/mcastellanosd87>.
+						dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:toxicityLabel_ENG 	rdf:type        owl:DatatypeProperty;	
 				rdfs:label	"toxicityLabel_ENG";
@@ -1649,7 +1649,7 @@ bmLC:toxicityLabel_ENG 	rdf:type        owl:DatatypeProperty;
 						rdfs:range	rdfs:Literal;
 						rdfs:comment	".";
 						dcterms:modified "2019-05-24"^^xsd:date;
-						dcterms:creator  <https://www.l3s.de/de/user/mcastellanosd87>.
+						dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:distanceToHospital	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"distanceToHospital";
@@ -2092,7 +2092,7 @@ bmLC:bodyPartExaminedLabel     rdf:type	owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:diagnosisLabel    rdf:type	owl:DatatypeProperty;
 							rdfs:label	"diagnosisLabel";
@@ -2100,7 +2100,7 @@ bmLC:diagnosisLabel    rdf:type	owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:hasImage       rdf:type     owl:ObjectProperty;
@@ -2109,7 +2109,7 @@ bmLC:hasImage       rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:LCImage;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:imageType      rdf:type     owl:ObjectProperty;
 							rdfs:label	"imageType";
@@ -2125,7 +2125,7 @@ bmLC:modality      rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:Modality;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:manufacturer       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"manufacturer";
@@ -2133,7 +2133,7 @@ bmLC:manufacturer       rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:studyDescription       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"studyDescription";
@@ -2141,7 +2141,7 @@ bmLC:studyDescription       rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:bodyPartExamined      rdf:type     owl:ObjectProperty;
 							rdfs:label	"bodyPartExamined";
@@ -2149,7 +2149,7 @@ bmLC:bodyPartExamined      rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:BodyPartExamined;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:sliceThickness       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"sliceThickness";
@@ -2157,7 +2157,7 @@ bmLC:sliceThickness       rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:protocolName       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"protocolName";
@@ -2165,7 +2165,7 @@ bmLC:protocolName       rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:patientPosition      rdf:type     owl:ObjectProperty;
 							rdfs:label	"patientPosition";
@@ -2173,7 +2173,7 @@ bmLC:patientPosition      rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:PatientPosition;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:rows       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"rows";
@@ -2181,7 +2181,7 @@ bmLC:rows       rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:columns       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"columns";
@@ -2189,7 +2189,7 @@ bmLC:columns       rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:pixelSpacingX       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"pixelSpacingX";
@@ -2197,7 +2197,7 @@ bmLC:pixelSpacingX       rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:pixelSpacingY      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"pixelSpacingY";
@@ -2205,7 +2205,7 @@ bmLC:pixelSpacingY      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:bitsAllocated      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"bitsAllocated";
@@ -2213,7 +2213,7 @@ bmLC:bitsAllocated      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:bitsStored      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"bitsStored";
@@ -2221,7 +2221,7 @@ bmLC:bitsStored      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:highBit      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"highBit";
@@ -2229,7 +2229,7 @@ bmLC:highBit      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:rescaleIntercept      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"rescaleIntercept";
@@ -2237,7 +2237,7 @@ bmLC:rescaleIntercept      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:rescaleSlope      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"rescaleSlope";
@@ -2245,7 +2245,7 @@ bmLC:rescaleSlope      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:huphm      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"huphm";
@@ -2253,7 +2253,7 @@ bmLC:huphm      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:lungLaterality      rdf:type     owl:ObjectProperty;
 							rdfs:label	"lungLaterality";
@@ -2261,7 +2261,7 @@ bmLC:lungLaterality      rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:LungLaterality;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:lungLateralityLabel      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"lungLateralityLabel";
@@ -2269,7 +2269,7 @@ bmLC:lungLateralityLabel      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:modalityLabel      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"modalityLabel";
@@ -2277,7 +2277,7 @@ bmLC:modalityLabel      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:hasOrgans     rdf:type     owl:ObjectProperty;
@@ -2286,7 +2286,7 @@ bmLC:hasOrgans     rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:Organ;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasDiagnosis     rdf:type     owl:ObjectProperty;
 							rdfs:label	"hasDiagnosis";
@@ -2294,7 +2294,7 @@ bmLC:hasDiagnosis     rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:Diagnosis;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasDiagnosis_imageBased     rdf:type     owl:ObjectProperty;
 							rdfs:label	"hasDiagnosis_imageBased";
@@ -2311,7 +2311,7 @@ bmLC:hasDiagnosisTumorStage   rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:TumorStage;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasDiagnosisTumorType   rdf:type     owl:ObjectProperty;
 							rdfs:label	"hasDiagnosisTumorType";
@@ -2319,7 +2319,7 @@ bmLC:hasDiagnosisTumorType   rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:TumorType;
 							rdfs:comment ".";
 							dcterms:modified "2019-05-23"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:hasDiagnosisDate   rdf:type     owl:ObjectProperty;
@@ -2328,7 +2328,7 @@ bmLC:hasDiagnosisDate   rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:Date;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasDiagnosisAge   rdf:type     owl:DatatypeProperty;
 							rdfs:label	"hasDiagnosisAge";
@@ -2336,7 +2336,7 @@ bmLC:hasDiagnosisAge   rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasDiagnosisPerformanceStatus   rdf:type     owl:ObjectProperty;
 							rdfs:label	"hasDiagnosisPerformanceStatus";
@@ -2344,7 +2344,7 @@ bmLC:hasDiagnosisPerformanceStatus   rdf:type     owl:ObjectProperty;
 							rdfs:range	bmLC:PerformanceStatus;
 							rdfs:comment ".";
 							dcterms:modified "2019-05-24"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:patientPositionLabel     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"patientPositionLabel";
@@ -2352,7 +2352,7 @@ bmLC:patientPositionLabel     rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:genderLabel_ENG        rdf:type     owl:DatatypeProperty;
@@ -2371,7 +2371,7 @@ bmLC:chemotherapyList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:immunotherapyList      rdf:type     owl:DatatypeProperty;
@@ -2380,7 +2380,7 @@ bmLC:immunotherapyList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 bmLC:tkiList      rdf:type     owl:DatatypeProperty;
@@ -2389,7 +2389,7 @@ bmLC:tkiList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:comorbidityList      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"comorbidityList";
@@ -2397,7 +2397,7 @@ bmLC:comorbidityList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:drugGroupList      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"drugGroupList";
@@ -2405,7 +2405,7 @@ bmLC:drugGroupList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:biopsyList      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"biopsyList";
@@ -2413,7 +2413,7 @@ bmLC:biopsyList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:ecogList      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"ecogList";
@@ -2421,7 +2421,7 @@ bmLC:ecogList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:stageList      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"stageList";
@@ -2429,7 +2429,7 @@ bmLC:stageList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:familialAntecedentList      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"familialAntecedentList";
@@ -2437,7 +2437,7 @@ bmLC:familialAntecedentList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:nonOncologicalTreatmentList      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"nonOncologicalTreatmentList";
@@ -2445,7 +2445,7 @@ bmLC:nonOncologicalTreatmentList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:isBetweenPatients	rdf:type        owl:ObjectProperty;	
 				                rdfs:label	"isBetweenPatients";
@@ -2453,7 +2453,7 @@ bmLC:isBetweenPatients	rdf:type        owl:ObjectProperty;
 						rdfs:range	bmLC:LCPatient;
 						rdfs:comment	".";
 						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:similarityValue     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"similarityValue";
@@ -2461,4 +2461,4 @@ bmLC:similarityValue     rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
