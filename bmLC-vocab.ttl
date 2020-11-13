@@ -1499,6 +1499,15 @@ bmLC:hasNonOncologicalDrug	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
+bmLC:hasNonOncologicalDrugInFirstTreatmentLine	rdf:type        owl:ObjectProperty;	
+										        rdfs:label	"hasNonOncologicalDrugInFirstTreatmentLine";
+										        rdfs:subPropertyOf bmLC:hasNonOncologicalDrug;
+												rdfs:domain	bmLC:LCPatient;
+												rdfs:range	bmLC:Drug;
+												rdfs:comment "Relation between the patient and the non-oncological drug which is prescibed before/during the first oncological line of treamtment.";
+												dcterms:modified "2020-11-13"^^xsd:date;
+												dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
 bmLC:hasOncologicalTreatmentLine	rdf:type        owl:ObjectProperty;	
 				        rdfs:label	"hasOncologicalTreatmentLine";
 						rdfs:domain	bmLC:LCPatient;
