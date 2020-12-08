@@ -400,15 +400,22 @@ bmLC:ToxicityObservation    rdf:type        owl:Class;
 					dcterms:modified "2019-05-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-bmLC:OncologicalTreatmentLine	rdf:type	owl:Class;
+bmLC:TreatmentLine	rdf:type	owl:Class;
 						rdfs:subClassOf bmLC:Concept;
+						rdfs:label	"TreatmentLine";
+						rdfs:comment "Represents any type of treatment line observations.";
+						dcterms:modified "2020-12-07"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:OncologicalTreatmentLine	rdf:type	owl:Class;
+						rdfs:subClassOf bmLC:TreatmentLine;
 						rdfs:label	"OncologicalTreatmentLine";
 						rdfs:comment "Represents oncological treatment line observations.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
 bmLC:NonOncologicalTreatmentLine	rdf:type	owl:Class;
-						rdfs:subClassOf bmLC:Concept;
+						rdfs:subClassOf bmLC:TreatmentLine;
 						rdfs:label	"NonOncologicalTreatmentLine";
 						rdfs:comment "Represents non-oncological treatment line observations.";
 						dcterms:modified "2020-07-21"^^xsd:date;
