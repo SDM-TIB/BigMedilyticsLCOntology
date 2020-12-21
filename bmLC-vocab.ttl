@@ -57,7 +57,6 @@ bmLC:Interaction	rdf:type owl:Class;
 			dcterms:modified "2020-07-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.			
 
-
 #### WP4 requirements: 
 
 bmLC:Publication	rdf:type	owl:Class;
@@ -1682,6 +1681,14 @@ bmLC:hasHospitalProcess	rdf:type        owl:ObjectProperty;
 						rdfs:comment "Relation between the patient to which the hospital process belongs and the hospital process.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																							
+
+bmLC:hasHospitalServiceReason	rdf:type        owl:ObjectProperty;	
+						        rdfs:label	"hasHospitalServiceReason";
+								rdfs:domain	bmLC:LCPatient;
+								rdfs:range	bmLC:ServiceReason;
+								rdfs:comment "";
+								dcterms:modified "2020-12-21"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 bmLC:hasDurationInHospital	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"hasDurationInHospital";
