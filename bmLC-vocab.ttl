@@ -1539,12 +1539,12 @@ bmLC:existenceOf_toxicity	rdf:type        owl:DatatypeProperty;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 bmLC:treatmentLineNumber	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"treatmentLineNumber";
-						rdfs:domain	bmLC:OncologicalTreatmentLine;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Line of treatment number.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+					        rdfs:label	"treatmentLineNumber";
+							rdfs:domain	bmLC:OncologicalTreatmentLine;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "Line of treatment number.";
+							dcterms:modified "2020-07-21"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 bmLC:treatmentDurationMonths	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"treatmentDurationMonths";
