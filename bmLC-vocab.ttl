@@ -434,10 +434,10 @@ bmLC:HospitalProcess	rdf:type	owl:Class;
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
-bmLC:ServiceReason	rdf:type	owl:Class;
+bmLC:HospitalService	rdf:type	owl:Class;
 						rdfs:subClassOf bmLC:Concept;
-						rdfs:label	"Represents the reason of the provided service.";
-						rdfs:comment "Represents hospital process.";
+						rdfs:label	"HospitalService";
+						rdfs:comment "Represents the hospital service that is provided.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
@@ -1682,10 +1682,10 @@ bmLC:hasHospitalProcess	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																							
 
-bmLC:hasHospitalServiceReason	rdf:type        owl:ObjectProperty;	
-						        rdfs:label	"hasHospitalServiceReason";
+bmLC:hasHospitalService	rdf:type        owl:ObjectProperty;	
+						        rdfs:label	"hasHospitalService";
 								rdfs:domain	bmLC:LCPatient;
-								rdfs:range	bmLC:ServiceReason;
+								rdfs:range	bmLC:HospitalService;
 								rdfs:comment "";
 								dcterms:modified "2020-12-21"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
@@ -1739,45 +1739,6 @@ bmLC:hasDischargeDate	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																						
 
-bmLC:hasDocumentCategory	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"hasDocumentCategory";
-						rdfs:domain	bmLC:ServiceReason;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "An attribute of the service reason representing the category of the document in which it is specified that the patient has been in that specific service.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.							
-
-bmLC:hasHospitalService	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"hasHospitalService";
-						rdfs:domain	bmLC:ServiceReason;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "An attribute of the service reason representing the type of the hospital service at which the patient has been derived.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-bmLC:hasVisitReason	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"hasVisitReason";
-						rdfs:domain	bmLC:ServiceReason;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "An attribute of the service reason representing the reason of the visit of the patient to that specific service.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-bmLC:hasDocumentDate	rdf:type        owl:ObjectProperty;	
-				        rdfs:label	"hasDocumentDate";
-						rdfs:domain	bmLC:ServiceReason;
-						rdfs:range	bmLC:Date;
-						rdfs:comment "An attribute of the service reason representing the date of the document in which it is specified that the patient has been in that specific service.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-bmLC:hasDocumentDate	rdf:type owl:ObjectProperty;	
-				        rdfs:label	"hasDocumentDate";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	bmLC:ServiceReason;
-						rdfs:comment "";
-						dcterms:modified "2020-10-29"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:radonRiskLevel	rdf:type owl:DatatypeProperty;	
 			        rdfs:label	"radonRiskLevel";
