@@ -441,6 +441,91 @@ bmLC:HospitalService	rdf:type	owl:Class;
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
+bmLC:ServiceBeforeDiagnosis	rdf:type	owl:Class;
+							rdfs:subClassOf bmLC:HospitalService;
+							rdfs:label	"ServiceBeforeDiagnosis";
+							rdfs:comment "";
+							dcterms:modified "2021-02-05"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:ServiceAfterDiagnosis	rdf:type	owl:Class;
+							rdfs:subClassOf bmLC:HospitalService;
+							rdfs:label	"ServiceAfterDiagnosis";
+							rdfs:comment "";
+							dcterms:modified "2021-02-05"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:ServiceAfterDiagnosisBeforeOncologicalTreatment	rdf:type	owl:Class;
+														rdfs:subClassOf bmLC:HospitalService;
+														rdfs:label	"ServiceAfterDiagnosisBeforeOncologicalTreatment";
+														rdfs:comment "";
+														dcterms:modified "2021-02-05"^^xsd:date;
+														dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:ServiceDuringOncologicalTreatment	rdf:type	owl:Class;
+										rdfs:subClassOf bmLC:HospitalService;
+										rdfs:label	"ServiceDuringOncologicalTreatment";
+										rdfs:comment "";
+										dcterms:modified "2021-02-05"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:ServiceAfterOncologicalTreatment	rdf:type	owl:Class;
+										rdfs:subClassOf bmLC:HospitalService;
+										rdfs:label	"ServiceAfterOncologicalTreatment";
+										rdfs:comment "";
+										dcterms:modified "2021-02-05"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:ScopeOfService	rdf:type	owl:Class;
+					rdfs:subClassOf bmLC:Concept;
+					rdfs:label	"ScopeOfService";
+					rdfs:comment "";
+					dcterms:modified "2021-02-05"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:TypeOfService	rdf:type	owl:Class;
+					rdfs:subClassOf bmLC:Concept;
+					rdfs:label	"TypeOfService";
+					rdfs:comment "";
+					dcterms:modified "2021-02-05"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:ServiceDepartment	rdf:type	owl:Class;
+					rdfs:subClassOf bmLC:Concept;
+					rdfs:label	"ServiceDepartment";
+					rdfs:comment "";
+					dcterms:modified "2021-02-05"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:ProcessComment	rdf:type	owl:Class;
+					rdfs:subClassOf bmLC:Concept;
+					rdfs:label	"ProcessComment";
+					rdfs:comment "";
+					dcterms:modified "2021-02-05"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:ProcessStatus	rdf:type	owl:Class;
+					rdfs:subClassOf bmLC:Concept;
+					rdfs:label	"ProcessStatus";
+					rdfs:comment "";
+					dcterms:modified "2021-02-05"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:ClinicalStatus	rdf:type	owl:Class;
+					rdfs:subClassOf bmLC:Concept;
+					rdfs:label	"ClinicalStatus";
+					rdfs:comment "";
+					dcterms:modified "2021-02-05"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+bmLC:DiagnosisDescription	rdf:type	owl:Class;
+							rdfs:subClassOf bmLC:Concept;
+							rdfs:label	"DiagnosisDescription";
+							rdfs:comment "";
+							dcterms:modified "2021-02-05"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
+
 #### clinical images:
 
 bmLC:Diagnosis  	rdf:type owl:Class;
@@ -1747,6 +1832,111 @@ bmLC:radonRiskLevel	rdf:type owl:DatatypeProperty;
 					rdfs:comment "";
 					dcterms:modified "2020-10-29"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:diagnosisDate	rdf:type owl:DatatypeProperty;	
+			        rdfs:label	"diagnosisDate";
+					rdfs:domain	bmLC:HospitalService;
+					rdfs:range	rdfs:Literal;
+					rdfs:comment "";
+					dcterms:modified "2021-02-05"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hospitalized_days	rdf:type owl:DatatypeProperty;	
+				        rdfs:label	"hospitalized_days";
+						rdfs:domain	bmLC:HospitalService;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:days_between_firstConsultation_and_diagnosis	rdf:type owl:DatatypeProperty;	
+											        rdfs:label	"days_between_firstConsultation_and_diagnosis";
+													rdfs:domain	bmLC:HospitalService;
+													rdfs:range	rdfs:Literal;
+													rdfs:comment "";
+													dcterms:modified "2021-02-05"^^xsd:date;
+													dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:first_consultation_date	rdf:type owl:DatatypeProperty;	
+						        rdfs:label	"first_consultation_date";
+								rdfs:domain	bmLC:HospitalService;
+								rdfs:range	rdfs:Literal;
+								rdfs:comment "";
+								dcterms:modified "2021-02-05"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:service_percentage	rdf:type owl:DatatypeProperty;	
+				        rdfs:label	"service_percentage";
+						rdfs:domain	bmLC:HospitalService;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:processStartDate	rdf:type owl:DatatypeProperty;	
+				        rdfs:label	"processStartDate";
+						rdfs:domain	bmLC:HospitalService;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:startDate	rdf:type owl:DatatypeProperty;	
+		        rdfs:label	"startDate";
+				rdfs:domain	bmLC:HospitalService;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment "";
+				dcterms:modified "2021-02-05"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:endDate	rdf:type owl:DatatypeProperty;	
+		        rdfs:label	"endDate";
+				rdfs:domain	bmLC:HospitalService;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment "";
+				dcterms:modified "2021-02-05"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:processDescription	rdf:type owl:DatatypeProperty;	
+				        rdfs:label	"processDescription";
+						rdfs:domain	bmLC:HospitalService;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:service_has_scope	rdf:type owl:DatatypeProperty;	
+				        rdfs:label	"service_has_scope";
+						rdfs:domain	bmLC:HospitalService;
+						rdfs:range	bmLC:ScopeOfService;
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:service_has_type	rdf:type owl:DatatypeProperty;	
+				        rdfs:label	"service_has_type";
+						rdfs:domain	bmLC:HospitalService;
+						rdfs:range	bmLC:TypeOfService;
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:service_isRelatedTo_department	rdf:type owl:DatatypeProperty;	
+							        rdfs:label	"service_isRelatedTo_department";
+									rdfs:domain	bmLC:HospitalService;
+									rdfs:range	bmLC:ServiceDepartment;
+									rdfs:comment "";
+									dcterms:modified "2021-02-05"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:is_associated_with	rdf:type owl:DatatypeProperty;	
+				        rdfs:label	"is_associated_with";
+						rdfs:domain	bmLC:HospitalService;
+						rdfs:range	bmLC:Concept;
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
 
 ##### lc_images:
 
