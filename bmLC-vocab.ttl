@@ -364,13 +364,6 @@ bmLC:TumorType	rdf:type	owl:Class;
 						dcterms:modified "2018-10-04"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:Date	rdf:type	owl:Class;
-						rdfs:subClassOf bmLC:Concept;
-						rdfs:label	"Date";
-						rdfs:comment "Date";
-						dcterms:modified "2018-10-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 bmLC:Biomarker	 rdf:type	owl:Class;
 					rdfs:label	"Biomarker";
 					rdfs:subClassOf	bmLC:Concept;
@@ -1244,13 +1237,13 @@ bmLC:hasMutation	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2017-10-04"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:hasDate	rdf:type        owl:ObjectProperty;	
+bmLC:hasDate 	rdf:type owl:DatatypeProperty;	
 				rdfs:label	"hasDate";
-						rdfs:domain	bmLC:Concept;
-						rdfs:range	bmLC:Date;
-						rdfs:comment	"Date.";
-						dcterms:modified "2019-05-24"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+				rdfs:domain	bmLC:Concept;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment "Connection between any concept and the corresponding date.";
+				dcterms:modified "2021-03-18"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:hasPerformanceObservation	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasPerformanceObservation";
@@ -1292,20 +1285,20 @@ bmLC:survivalMonths	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2017-10-04"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:sampleDate	rdf:type	owl:ObjectProperty;
+bmLC:sampleDate	rdf:type	owl:DatatypeProperty;
 					rdfs:label	"sampleDate";
 					rdfs:domain	bmLC:LiquidBiopsy;
-					rdfs:range	bmLC:Date;
+					rdfs:range	rdfs:Literal;
 					rdfs:comment "Date on which the biopsy sample has been taken.";
-					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:modified "2021-03-18"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:resultDate	rdf:type	owl:ObjectProperty;
+bmLC:resultDate	rdf:type	owl:DatatypeProperty;
 					rdfs:label	"resultDate";
 					rdfs:domain	bmLC:LiquidBiopsy;
-					rdfs:range	bmLC:Date;
+					rdfs:range	rdfs:Literal;
 					rdfs:comment "Date on which the biopsy result has been provided.";
-					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:modified "2021-03-18"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 bmLC:targetTotal	rdf:type	owl:DatatypeProperty;
@@ -1711,20 +1704,20 @@ bmLC:treatmentType	rdf:type        owl:DatatypeProperty;
 						dcterms:modified "2020-07-22"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
-bmLC:treatmentFinishDate	rdf:type        owl:ObjectProperty;	
+bmLC:treatmentFinishDate	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"treatmentFinishDate";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
-						rdfs:range	bmLC:Date;
+						rdfs:range	rdfs:Literal;
 						rdfs:comment "Relation between the treatment line and the finishing date of the treatment line.";
-						dcterms:modified "2020-07-22"^^xsd:date;
+						dcterms:modified "2021-03-18"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
-bmLC:treatmentInitDate	rdf:type        owl:ObjectProperty;	
+bmLC:treatmentInitDate	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"treatmentInitDate";
 						rdfs:domain	bmLC:OncologicalTreatmentLine;
-						rdfs:range	bmLC:Date;
+						rdfs:range	rdfs:Literal;
 						rdfs:comment "Relation between the treatment line and the initiation date of the treatment line.";
-						dcterms:modified "2020-07-22"^^xsd:date;
+						dcterms:modified "2021-03-18"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																							
 
 bmLC:treatment_has_oncologicalDrug	rdf:type        owl:ObjectProperty;	
@@ -1808,20 +1801,20 @@ bmLC:hasProcessCategory	rdf:type        owl:DatatypeProperty;
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
-bmLC:hasIngressDate	rdf:type        owl:ObjectProperty;	
+bmLC:hasIngressDate	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"hasIngressDate";
 						rdfs:domain	bmLC:HospitalProcess;
-						rdfs:range	bmLC:Date;
+						rdfs:range	rdfs:Literal;
 						rdfs:comment "An attribute of the service reason representing the date at which the patient was ingressed. The initiation date of the hospital process.";
-						dcterms:modified "2020-07-21"^^xsd:date;
+						dcterms:modified "2021-03-18"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:hasDischargeDate	rdf:type        owl:ObjectProperty;	
+bmLC:hasDischargeDate	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"hasDischargeDate";
 						rdfs:domain	bmLC:HospitalProcess;
-						rdfs:range	bmLC:Date;
+						rdfs:range	rdfs:Literal;
 						rdfs:comment "An attribute of the service reason representing the date at which the patient was discharged. The finishing date of the hospital process.";
-						dcterms:modified "2020-07-21"^^xsd:date;
+						dcterms:modified "2021-03-18"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																						
 
 
@@ -2176,12 +2169,12 @@ bmLC:hasDiagnosisTumorType   rdf:type     owl:ObjectProperty;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
-bmLC:hasDiagnosisDate   rdf:type     owl:ObjectProperty;
+bmLC:hasDiagnosisDate   rdf:type     owl:DatatypeProperty;
 							rdfs:label	"hasDiagnosisDate";
 							rdfs:domain	bmLC:Diagnosis;
-							rdfs:range	bmLC:Date;
+							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:modified "2021-03-18"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:hasDiagnosisAge   rdf:type     owl:DatatypeProperty;
