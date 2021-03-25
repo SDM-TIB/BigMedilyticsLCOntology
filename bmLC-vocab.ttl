@@ -1795,7 +1795,7 @@ bmLC:hasImage       rdf:type     owl:ObjectProperty;
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-bmLC:imageType      rdf:type     owl:ObjectProperty;
+bmLC:imageType      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"imageType";
 							rdfs:domain	bmLC:LCImage;
 							rdfs:range	rdfs:Literal;
