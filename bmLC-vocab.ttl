@@ -356,14 +356,6 @@ bmLC:DrugGroup	rdf:type	owl:Class;
 						dcterms:modified "2018-10-04"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
-bmLC:TumorType	rdf:type	owl:Class;
-						rdfs:subClassOf bmLC:Concept;
-						rdfs:label	"TumorType";
-						rdfs:comment "The histology kind of the lung cancer. The type of tumor.";
-						dcterms:modified "2018-10-04"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 bmLC:Biomarker	 rdf:type	owl:Class;
 					rdfs:label	"Biomarker";
 					rdfs:subClassOf	bmLC:Concept;
@@ -1057,6 +1049,14 @@ bmLC:disorderLabel_SPA 	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-11-25"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
+bmLC:label_SPA 	rdf:type owl:DatatypeProperty;
+				rdfs:label "label_SPA";
+				rdfs:domain bmLC:DiagnosisDescription;
+			  	rdfs:range rdfs:Literal;
+              	rdfs:comment "Diagnosis Label in spanish.";
+				dcterms:modified "2021-03-25"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
 bmLC:biomarker_has_indication	rdf:type	owl:ObjectProperty;
 								rdfs:label	"biomarker_has_indication";
 								rdfs:domain	bmLC:Biomarker;
@@ -1277,14 +1277,6 @@ bmLC:biomarkerLabel	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2018-11-22"^^xsd:date;
 				dcterms:creator   <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-bmLC:survivalMonths	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"survivalMonths";
-				rdfs:domain	bmLC:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Months from diagnosis to death or until the last documented record of the patient.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 bmLC:sampleDate	rdf:type	owl:DatatypeProperty;
 					rdfs:label	"sampleDate";
 					rdfs:domain	bmLC:LiquidBiopsy;
@@ -1423,163 +1415,11 @@ bmLC:toxicityLabel_ENG 	rdf:type        owl:DatatypeProperty;
 						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-bmLC:distanceToHospital	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"distanceToHospital";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents the distance in kilometers from the city in which the patient lives to the hospital.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
-
-bmLC:beingIn_hospitalHealthArea	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"beingIn_hospitalHealthArea";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents if the patient lives in a city which belong to the municipal scope area awarded to the hospital. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
 bmLC:existenceOf_brainMetastasis	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"existenceOf_brainMetastasis";
 						rdfs:domain	bmLC:LCPatient;
 						rdfs:range	rdfs:Literal;
 						rdfs:comment "Represents if brain metastasis has been detected in Entity. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:existenceOf_bioRos1	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_bioRos1";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents the aggregated results of the biopsies performed to the Entity for the particular biomarker called ROS1. In particular, represents if an Entity has been studied, and if the result has been positive or negative in this specific biomarker. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-bmLC:existenceOf_bioEgfr	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_bioEgfr";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Meaning: Represents the aggregated results of the biopsies performed to the Entity for the particular biomarker called EGFR. In particular, represents if an Entity has been studied, and if the result has been positive or negative in this specific biomarker. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:existenceOf_bioAlk	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_bioAlk";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Meaning: Represents the aggregated results of the biopsies performed to the Entity for the particular biomarker called ALK. In particular, represents if an Entity has been studied, and if the result has been positive or negative in this specific biomarker. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:existenceOf_biomarker	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_biomarker";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Meaning: Represents the aggregated results of the biopsies of any biomarker performed to the Entity. In particular, represents if an Entity has been studied, and if the result has been positive or negative in any biomarker.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:existenceOf_tki	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_tki";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents if Entity has received tki oncology treatment. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:smoking	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"smoking";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents if current of former smoker the number of cigarettes per year.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:placeOfDeath	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"placeOfDeath";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents the location where the patient died [home, hospital]; value [alive] is returned if patients has not died.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:existenceOf_familiarAntecedents	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_familiarAntecedents";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents if the Entity has familiars with antecedents of cancer. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:existenceOf_radiationtherapy	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_radiationtherapy";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "If Entity has received radiationtherapy oncology treatment. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:ageAtDeath	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"ageAtDeath";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents the age when the patient dead.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:isDead	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"isDead";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents if the patient is currently dead. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:existenceOf_chemotherapy	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_chemotherapy";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents if Entity has received chemotherapy oncology treatment. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:existenceOf_surgery	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_surgery";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents whether a surgery has been performed to an Entity. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:numberOfCigarettesPerYear	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"numberOfCigarettesPerYear";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents if current of former smoker the number of cigarettes per year.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:existenceOf_antiangiogentic	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_antiangiogentic";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "If Entity has received antiangiogenic oncology treatment. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-bmLC:existenceOf_immunotherapy	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_immunotherapy";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "If Entity has received immunotherapy oncology treatment. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																																																												
-
-bmLC:hasNonOncologicalDrug	rdf:type        owl:ObjectProperty;	
-				        rdfs:label	"hasNonOncologicalDrug";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	bmLC:Drug;
-						rdfs:comment "Relation between the patient and the non-oncological line of treamtment.";
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
@@ -1728,14 +1568,6 @@ bmLC:treatment_has_oncologicalDrug	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2020-07-22"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
-bmLC:treatment_has_nonOncologicalDrug	rdf:type        owl:ObjectProperty;	
-				        rdfs:label	"treatmentInitDate";
-						rdfs:domain	bmLC:NonOncologicalTreatmentLine;
-						rdfs:range	bmLC:Drug;
-						rdfs:comment "Relation between the treatment line and the non-oncological drugs.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																								
-
 bmLC:oncologicalSurgeryLabel_ENG	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"oncologicalSurgeryLabel_ENG";
 						rdfs:domain	bmLC:OncologicalSurgery;
@@ -1817,15 +1649,6 @@ bmLC:hasDischargeDate	rdf:type        owl:DatatypeProperty;
 						dcterms:modified "2021-03-18"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																						
 
-
-bmLC:radonRiskLevel	rdf:type owl:DatatypeProperty;	
-			        rdfs:label	"radonRiskLevel";
-					rdfs:domain	bmLC:LCPatient;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment "";
-					dcterms:modified "2020-10-29"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 bmLC:diagnosisDate	rdf:type owl:DatatypeProperty;	
 			        rdfs:label	"diagnosisDate";
 					rdfs:domain	bmLC:HospitalService;
@@ -1898,7 +1721,7 @@ bmLC:processDescription	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2021-02-05"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:service_has_scope	rdf:type owl:DatatypeProperty;	
+bmLC:service_has_scope	rdf:type owl:ObjectProperty;	
 				        rdfs:label	"service_has_scope";
 						rdfs:domain	bmLC:HospitalService;
 						rdfs:range	bmLC:ScopeOfService;
@@ -1906,7 +1729,7 @@ bmLC:service_has_scope	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2021-02-05"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:service_has_type	rdf:type owl:DatatypeProperty;	
+bmLC:service_has_type	rdf:type owl:ObjectProperty;	
 				        rdfs:label	"service_has_type";
 						rdfs:domain	bmLC:HospitalService;
 						rdfs:range	bmLC:TypeOfService;
@@ -1914,7 +1737,7 @@ bmLC:service_has_type	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2021-02-05"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:service_isRelatedTo_department	rdf:type owl:DatatypeProperty;	
+bmLC:service_isRelatedTo_department	rdf:type owl:ObjectProperty;	
 							        rdfs:label	"service_isRelatedTo_department";
 									rdfs:domain	bmLC:HospitalService;
 									rdfs:range	bmLC:ServiceDepartment;
@@ -1922,13 +1745,29 @@ bmLC:service_isRelatedTo_department	rdf:type owl:DatatypeProperty;
 									dcterms:modified "2021-02-05"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-bmLC:is_associated_with	rdf:type owl:DatatypeProperty;	
+bmLC:is_associated_with	rdf:type owl:ObjectProperty;	
 				        rdfs:label	"is_associated_with";
 						rdfs:domain	bmLC:HospitalService;
 						rdfs:range	bmLC:Concept;
 						rdfs:comment "";
 						dcterms:modified "2021-02-05"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:serviceID	rdf:type owl:ObjectProperty;	
+		        rdfs:label	"serviceID";
+				rdfs:domain	bmLC:HospitalService;
+				rdfs:range	bmLC:HospitalService;
+				rdfs:comment ".";
+				dcterms:modified "2021-03-25"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																							
+
+bmLC:initDate	rdf:type owl:DatatypeProperty;	
+		        rdfs:label	"initDate";
+				rdfs:domain	bmLC:HospitalService;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment ".";
+				dcterms:modified "2021-03-25"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																							
 
 
 ##### lc_images:
@@ -2135,14 +1974,6 @@ bmLC:hasOrgans     rdf:type     owl:ObjectProperty;
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-bmLC:hasDiagnosis     rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosis";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	bmLC:Diagnosis;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
 bmLC:hasDiagnosis_imageBased     rdf:type     owl:ObjectProperty;
 							rdfs:label	"hasDiagnosis_imageBased";
 							rdfs:domain	bmLC:LCPatient;
@@ -2150,48 +1981,6 @@ bmLC:hasDiagnosis_imageBased     rdf:type     owl:ObjectProperty;
 							rdfs:comment ".";
 							dcterms:modified "2019-01-30"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-bmLC:hasDiagnosisTumorStage   rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosisTumorStage";
-							rdfs:domain	bmLC:Diagnosis;
-							rdfs:range	bmLC:TumorStage;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:hasDiagnosisTumorType   rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosisTumorType";
-							rdfs:domain	bmLC:Diagnosis;
-							rdfs:range	bmLC:TumorType;
-							rdfs:comment ".";
-							dcterms:modified "2019-05-23"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-
-bmLC:hasDiagnosisDate   rdf:type     owl:DatatypeProperty;
-							rdfs:label	"hasDiagnosisDate";
-							rdfs:domain	bmLC:Diagnosis;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2021-03-18"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:hasDiagnosisAge   rdf:type     owl:DatatypeProperty;
-							rdfs:label	"hasDiagnosisAge";
-							rdfs:domain	bmLC:Diagnosis;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:hasDiagnosisPerformanceStatus   rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosisPerformanceStatus";
-							rdfs:domain	bmLC:Diagnosis;
-							rdfs:range	bmLC:PerformanceStatus;
-							rdfs:comment ".";
-							dcterms:modified "2019-05-24"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 bmLC:patientPositionLabel     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"patientPositionLabel";
@@ -2210,102 +1999,3 @@ bmLC:genderLabel_ENG        rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2019-01-30"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
-####### lc_similarity:
-bmLC:chemotherapyList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"chemotherapyList";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-
-bmLC:immunotherapyList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"immunotherapyList";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-
-bmLC:tkiList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"tkiList";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:comorbidityList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"comorbidityList";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:drugGroupList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"drugGroupList";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:biopsyList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"biopsyList";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:ecogList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"ecogList";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:stageList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"stageList";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:familialAntecedentList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"familialAntecedentList";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:nonOncologicalTreatmentList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"nonOncologicalTreatmentList";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:isBetweenPatients	rdf:type        owl:ObjectProperty;	
-				                rdfs:label	"isBetweenPatients";
-						rdfs:domain	bmLC:PatientSimilarity;
-						rdfs:range	bmLC:LCPatient;
-						rdfs:comment	".";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-bmLC:similarityValue     rdf:type     owl:DatatypeProperty;
-							rdfs:label	"similarityValue";
-							rdfs:domain	bmLC:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
