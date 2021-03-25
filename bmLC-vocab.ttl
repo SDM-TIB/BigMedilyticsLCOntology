@@ -510,6 +510,13 @@ bmLC:DiagnosisDescription	rdf:type	owl:Class;
 							dcterms:modified "2021-02-05"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
+bmLC:TumorType	rdf:type	owl:Class;
+				rdfs:subClassOf bmLC:Concept;
+				rdfs:label	"TumorType";
+				rdfs:comment "";
+				dcterms:modified "2021-02-05"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+
 
 #### clinical images:
 
@@ -1415,17 +1422,8 @@ bmLC:toxicityLabel_ENG 	rdf:type        owl:DatatypeProperty;
 						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-bmLC:existenceOf_brainMetastasis	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_brainMetastasis";
-						rdfs:domain	bmLC:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents if brain metastasis has been detected in Entity. Format: Boolean";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
 bmLC:hasNonOncologicalDrugInFirstTreatmentLine	rdf:type        owl:ObjectProperty;	
 										        rdfs:label	"hasNonOncologicalDrugInFirstTreatmentLine";
-										        rdfs:subPropertyOf bmLC:hasNonOncologicalDrug;
 												rdfs:domain	bmLC:LCPatient;
 												rdfs:range	bmLC:Drug;
 												rdfs:comment "Relation between the patient and the non-oncological drug which is prescibed before/during the first oncological line of treamtment.";
@@ -1505,8 +1503,8 @@ bmLC:existenceOf_neumologicalToxicity	rdf:type        owl:DatatypeProperty;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 bmLC:existenceOf_analyticalToxicity	rdf:type        owl:DatatypeProperty;	
-				        rdfs:label	"existenceOf_gastrointestinalToxicity";
-						rdfs:domain	bmLC:existenceOf_analyticalToxicity;
+				        rdfs:label	"existenceOf_analyticalToxicity";
+						rdfs:domain	bmLC:OncologicalTreatmentLine;
 						rdfs:range	rdfs:Literal;
 						rdfs:comment "if the patient developed any toxicity of kind ‘analytical’ during the line. Format: Boolean.";
 						dcterms:modified "2020-07-21"^^xsd:date;
